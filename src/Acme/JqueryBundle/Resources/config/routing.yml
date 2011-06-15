@@ -1,0 +1,27 @@
+homepage:
+    pattern:  /
+    defaults: { _controller: AcmeJqueryBundle:Default:index }
+
+basics:
+  pattern: /basics/
+  defaults: { _controller: AcmeJqueryBundle:Default:basics }
+
+hide:
+  pattern: /hide/
+  defaults: { _controller: AcmeJqueryBundle:Default:hide }
+  
+hide_parent:
+  pattern: /hide_parent/
+  defaults: { _controller: AcmeJqueryBundle:Default:hideParent }
+  
+slide:
+  pattern: /slide/
+  defaults: { _controller: AcmeJqueryBundle:Default:slide }
+
+fade:
+  pattern: /fade/
+  defaults: { _controller: AcmeJqueryBundle:Default:fade }
+  
+animate:
+  pattern: /animate/
+  defaults: { _controller: AcmeJqueryBundle:Default:animate }

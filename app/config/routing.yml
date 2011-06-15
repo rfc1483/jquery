@@ -1,0 +1,3 @@
+homepage: 
+  resource: "@AcmeJqueryBundle/Resources/config/routing.yml"
+  

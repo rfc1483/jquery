@@ -1,0 +1,26 @@
+{% extends "AcmeJqueryBundle::layout.html.twig" %}
+
+{% block head %}
+    {{ parent() }}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div.animate").animate({height:300},"slow");
+                $("div.animate").animate({width:300},"slow");
+                $("div.animate").animate({height:100},"slow");
+                $("div.animate").animate({width:100},"slow");        
+            });
+        });
+    </script>        
+{% endblock %}
+
+{% block content %}
+    <h1>Description</h1>
+    
+    <button>Start Animation</button>
+    <br /><br />
+    <div class="animate" style="background:#98bf21;height:100px;width:100px;position:relative">
+    </div>
+{% endblock %}
+    
+{% set code = code(_self) %}

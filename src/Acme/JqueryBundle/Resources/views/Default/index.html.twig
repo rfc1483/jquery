@@ -1,0 +1,15 @@
+{% extends "AcmeJqueryBundle::layout.html.twig" %}
+
+{% block content %}
+    <h1>Menu</h1>
+    <ul id="demo-list">
+            <li><a href="{{ path('basics') }}">Basics</a></li>
+            <li><a href="{{ path('hide') }}">Hide</a></li>
+            <li><a href="{{ path('hide_parent') }}">Hide parent</a></li>
+            <li><a href="{{ path('slide') }}">Slide</a></li>
+            <li><a href="{{ path('fade') }}">Fade</a></li>
+            <li><a href="{{ path('animate') }}">Animate</a></li>
+    </ul>
+{% endblock %}
+    
+{% set code = code(_self) %}
