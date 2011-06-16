@@ -27,7 +27,7 @@ class __TwigTemplate_7a0cb18098b1f82c934a404186f4fee0 extends Twig_Template
     {
         $context = array_merge($this->env->getGlobals(), $context);
 
-        // line 15
+        // line 18
         $context['code'] = $this->env->getExtension('demo')->getCode($this);
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
     }
@@ -62,6 +62,18 @@ class __TwigTemplate_7a0cb18098b1f82c934a404186f4fee0 extends Twig_Template
         // line 11
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("animate"), "html");
         echo "\">Animate</a></li>
+            <li><a href=\"";
+        // line 12
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("css"), "html");
+        echo "\">CSS</a></li>
+            <li><a href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("toggle"), "html");
+        echo "\">Toggle</a></li>
+            <li><a href=\"";
+        // line 14
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ajax"), "html");
+        echo "\">Ajax</a></li>
     </ul>
 ";
     }

@@ -31,46 +31,44 @@ class __TwigTemplate_0d4a1f3a89dcd461cbc923817303d1b2 extends Twig_Template
         echo "    </head>
     <body>
         <div id=\"symfony-wrapper\">
-            <div id=\"symfony-header\">
-            </div>
             ";
-        // line 16
+        // line 14
         if ($this->getAttribute($this->getAttribute($this->getContext($context, 'app'), "session", array(), "any", false), "flash", array("notice", ), "method", false)) {
-            // line 17
+            // line 15
             echo "            <div class=\"flash-message\">
                 <em>Notice</em>: ";
-            // line 18
+            // line 16
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getContext($context, 'app'), "session", array(), "any", false), "flash", array("notice", ), "method", false), "html");
             echo "
             </div>
             ";
         }
-        // line 21
+        // line 19
         echo "
             ";
-        // line 22
+        // line 20
         $this->displayBlock('content_header', $context, $blocks);
-        // line 31
+        // line 29
         echo "
             <div class=\"symfony-content\">
                 ";
-        // line 33
+        // line 31
         $this->displayBlock('content', $context, $blocks);
-        // line 35
+        // line 33
         echo "            </div>
 
             ";
-        // line 37
+        // line 35
         if (twig_test_defined("code", $context)) {
-            // line 38
+            // line 36
             echo "            <h2>Code behind this page</h2>
             <div class=\"symfony-content\">";
-            // line 39
+            // line 37
             echo $this->getContext($context, 'code');
             echo "</div>
             ";
         }
-        // line 41
+        // line 39
         echo "        </div>
     </body>
 </html>
@@ -107,35 +105,35 @@ class __TwigTemplate_0d4a1f3a89dcd461cbc923817303d1b2 extends Twig_Template
         ";
     }
 
-    // line 24
+    // line 22
     public function block_content_header_more($context, array $blocks = array())
     {
-        // line 25
+        // line 23
         echo "                <li><a href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("homepage"), "html");
         echo "\">Home</a></li>
                     ";
     }
 
-    // line 22
+    // line 20
     public function block_content_header($context, array $blocks = array())
     {
-        // line 23
+        // line 21
         echo "            <ul id=\"menu\">
                     ";
-        // line 24
+        // line 22
         $this->displayBlock('content_header_more', $context, $blocks);
-        // line 27
+        // line 25
         echo "            </ul>
 
             <div style=\"clear: both\"></div>
             ";
     }
 
-    // line 33
+    // line 31
     public function block_content($context, array $blocks = array())
     {
-        // line 34
+        // line 32
         echo "                ";
     }
 

@@ -25,3 +25,15 @@ fade:
 animate:
   pattern: /animate/
   defaults: { _controller: AcmeJqueryBundle:Default:animate }
+
+css:
+  pattern: /css/
+  defaults: { _controller: AcmeJqueryBundle:Default:css }
+  
+toggle:
+  pattern: /toggle/
+  defaults: { _controller: AcmeJqueryBundle:Default:toggle }
+
+ajax:
+  pattern: /ajax/
+  defaults: { _controller: AcmeJqueryBundle:Default:ajax }

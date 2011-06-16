@@ -80,6 +80,30 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Acme\\JqueryBundle\\Controller\\DefaultController::animateAction',  '_route' => 'animate',);
         }
 
+        // css
+        if (rtrim($pathinfo, '/') === '/css') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'css');
+            }
+            return array (  '_controller' => 'Acme\\JqueryBundle\\Controller\\DefaultController::cssAction',  '_route' => 'css',);
+        }
+
+        // toggle
+        if (rtrim($pathinfo, '/') === '/toggle') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'toggle');
+            }
+            return array (  '_controller' => 'Acme\\JqueryBundle\\Controller\\DefaultController::toggleAction',  '_route' => 'toggle',);
+        }
+
+        // ajax
+        if (rtrim($pathinfo, '/') === '/ajax') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'ajax');
+            }
+            return array (  '_controller' => 'Acme\\JqueryBundle\\Controller\\DefaultController::ajaxAction',  '_route' => 'ajax',);
+        }
+
         // _welcome
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

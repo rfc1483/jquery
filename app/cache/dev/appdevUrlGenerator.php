@@ -20,6 +20,9 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        'slide' => true,
        'fade' => true,
        'animate' => true,
+       'css' => true,
+       'toggle' => true,
+       'ajax' => true,
        '_welcome' => true,
        '_demo_login' => true,
        '_security_check' => true,
@@ -96,6 +99,21 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
     private function getanimateRouteInfo()
     {
         return array(array (), array (  '_controller' => 'Acme\\JqueryBundle\\Controller\\DefaultController::animateAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/animate/',  ),));
+    }
+
+    private function getcssRouteInfo()
+    {
+        return array(array (), array (  '_controller' => 'Acme\\JqueryBundle\\Controller\\DefaultController::cssAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/css/',  ),));
+    }
+
+    private function gettoggleRouteInfo()
+    {
+        return array(array (), array (  '_controller' => 'Acme\\JqueryBundle\\Controller\\DefaultController::toggleAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/toggle/',  ),));
+    }
+
+    private function getajaxRouteInfo()
+    {
+        return array(array (), array (  '_controller' => 'Acme\\JqueryBundle\\Controller\\DefaultController::ajaxAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/ajax/',  ),));
     }
 
     private function get_welcomeRouteInfo()

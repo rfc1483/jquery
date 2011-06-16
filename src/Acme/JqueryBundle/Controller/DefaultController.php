@@ -48,5 +48,20 @@ class DefaultController extends Controller
     public function animateAction()
     {
         return $this->render('AcmeJqueryBundle:Default:animate.html.twig');
-    }
+    }  
+    
+    public function cssAction()
+    {
+        return $this->render('AcmeJqueryBundle:Default:css.html.twig');
+    }  
+    
+    public function toggleAction()
+    {
+        return $this->render('AcmeJqueryBundle:Default:toggle.html.twig');
+    }  
+    
+    public function ajaxAction()
+    {
+        return $this->render('AcmeJqueryBundle:Default:ajax.html.twig');
+    }  
 }
